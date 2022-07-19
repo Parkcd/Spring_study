@@ -2,8 +2,18 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.spring.ex01.PersonService"/>
     <fullyQualifiedTypeName name="com.spring.ex01.PersonServiceImpl"/>
+    <fullyQualifiedTypeName name="com.spring.ex02.PersonService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
     <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
-    <fullyQualifiedTypeName name="com.spring.ex02.PersonService"/>
+    <fullyQualifiedTypeName name="com.spring.ex03.MemberService"/>
+    <fullyQualifiedTypeName name="sun.awt.AppContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.FileSystemXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.Method"/>
+    <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+    <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInvocation"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.spring.ex01.Calculator"/>
 </qualifiedTypeNameHistroy>
