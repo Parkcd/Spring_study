@@ -56,7 +56,11 @@ public class UserController extends MultiActionController {
 	 
 	private  String getViewName(HttpServletRequest request) throws Exception { //getViewName 메소드 하는역할은 주소앞에 http://localhost8090/pro21/test 까지 짤라주고 뒤에는 jsp 짤라줌. 그래서 jsp 파일명만 남김
 	      String contextPath = request.getContextPath();
+	    //  System.out.println("contextPath:" + contextPath);
+	     
 	      String uri = (String)request.getAttribute("javax.servlet.include.request_uri");
+	    //  System.out.println("uri:" + uri);
+	      
 	      if(uri == null || uri.trim().equals("")) {
 	         uri = request.getRequestURI();
 	      }
@@ -64,16 +68,19 @@ public class UserController extends MultiActionController {
 	      int begin = 0;
 	      if(!((contextPath==null)||("".equals(contextPath)))){
 	         begin = contextPath.length();
+	   //      System.out.println("begin:" + begin);
 	      }
-
+	      
+	   //   System.out.println("uri:" + uri);
 	      int end;
-	      if(uri.indexOf(";")!=-1){
+	      if(uri.indexOf(";")!=-1){ //indexOf의 역할은 위치를 찾는것
 	         end=uri.indexOf(";");
 	      }else if(uri.indexOf("?")!=-1){
 	         end=uri.indexOf("?");
 	      }else{
 	         end=uri.length();
 	      }
+	    //  System.out.println("end:" + end);
 
 	      String fileName=uri.substring(begin,end);
 	      if(fileName.indexOf(".")!=-1){
@@ -82,6 +89,8 @@ public class UserController extends MultiActionController {
 	      if(fileName.lastIndexOf("/")!=-1){
 	         fileName=fileName.substring(fileName.lastIndexOf("/"),fileName.length());
 	      }
+	      
+	    //  System.out.println("fileName:" + fileName);
 	      return fileName;
 	   }
 
