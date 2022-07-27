@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="test01"/>
 <aop-project name="test02"/>
+<aop-project name="pro27t"/>
 <aop-project name="ex00"/>
 <aop-project name="pro27"/>
 </aop-reference-model>
